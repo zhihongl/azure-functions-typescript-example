@@ -1,0 +1,30 @@
+{
+  "name": "typescript-azure-functions-starter",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsc",
+    "build:production": "npm run prestart && npm prune --production",
+    "watch": "tsc --w",
+    "prestart": "npm run build && func extensions install",
+    "start:host": "func start",
+    "start": "npm run start:host & npm run watch",
+    "test": "echo \"No tests yet...\""
+  },
+  "description": "A typescript azure starter function.",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^12.7.4",
+    "panda-facts": "^1.0.3",
+    "prettier": "^1.18.2",
+    "random-puppy": "^1.1.0",
+    "tslint": "^5.20.0"
+  },
+  "devDependencies": {
+    "@azure/functions": "^1.0.3",
+    "lint-staged": "^9.2.5",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.6.2"
+  }
+}
