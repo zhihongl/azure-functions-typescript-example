@@ -2,6 +2,12 @@
 
 A typescript Azure functions example
 
+# start the project, by typing
+
+```
+yarn && yarn start
+```
+
 # Project Explaination
 
 1. home page which is http://localhost:7071, two links can be find here.
